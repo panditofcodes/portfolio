@@ -1,0 +1,98 @@
+/* Add this CSS to your existing stylesheet or create a new one
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container-fluid {
+    height: 100%;
+  }
+  
+  .row {
+    height: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col-lg-3,
+  .col-md-4,
+  .col-sm-12 {
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .tab-content {
+    height: 100%;
+    overflow-y: auto;
+  }
+   */
+/* SocialLinks.css */
+
+/* SocialLinks.css */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adjust the gap between icons */
+}
+
+.social-links a {
+  text-decoration: none; /* Remove default text decoration */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+/* If you want to style the icons, you can do so here */
+.social-links a svg {
+  font-size: 24px; /* Example font size for icons */
+  /* Add additional styles if needed */
+}
+/* Add this CSS code to your stylesheet */
+
+/* Center the content */
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Add this CSS code to your stylesheet */
+
+/* Style for the card */
+.card {
+  width: 18rem;
+  margin: 20px; /* Add margin */
+  padding: 15px; /* Add padding */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the card image */
+.card-img-top {
+  max-height: 200px; /* Adjust image height */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Style for the buttons */
+.card-body .btn {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+

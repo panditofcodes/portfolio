@@ -49,7 +49,7 @@ export default function Nav() {
             aria-controls="education-tab-pane"
             aria-selected="false"
           >
-           Education
+            Education
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -63,7 +63,7 @@ export default function Nav() {
             aria-controls="skills-tab-pane"
             aria-selected="false"
           >
-           Skills
+            Skills
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -77,7 +77,7 @@ export default function Nav() {
             aria-controls="hobbies-tab-pane"
             aria-selected="false"
           >
-           Hobbies
+            Hobbies
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -118,7 +118,7 @@ export default function Nav() {
           aria-labelledby="home-tab"
           tabindex="0"
         >
-          <Home/>
+          <Home />
         </div>
         <div
           className="tab-pane fade"
@@ -127,7 +127,7 @@ export default function Nav() {
           aria-labelledby="project-tab"
           tabindex="0"
         >
-          <Projects/>
+          <Projects />
         </div>
         <div
           className="tab-pane fade"
@@ -136,7 +136,7 @@ export default function Nav() {
           aria-labelledby="education-tab"
           tabindex="0"
         >
-          <Education/>
+          <Education />
         </div>
         <div
           className="tab-pane fade"
@@ -145,7 +145,7 @@ export default function Nav() {
           aria-labelledby="skills-tab"
           tabindex="0"
         >
-          <Skills/>
+          <Skills />
         </div>
         <div
           className="tab-pane fade"
@@ -154,7 +154,7 @@ export default function Nav() {
           aria-labelledby="hobbies-tab"
           tabindex="0"
         >
-          <Hobbies/>
+          <Hobbies />
         </div>
         <div
           className="tab-pane fade"
@@ -163,7 +163,7 @@ export default function Nav() {
           aria-labelledby="contact-tab"
           tabindex="0"
         >
-          <Contact/>
+          <Contact />
         </div>
         {/* <div
           className="tab-pane fade"
