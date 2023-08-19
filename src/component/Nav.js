@@ -2,6 +2,9 @@ import React from "react";
 import Home from "./Home";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Education from "./Education";
+import Skills from "./Skills";
+import Hobbies from "./Hobbies";
 
 export default function Nav() {
   return (
@@ -24,15 +27,57 @@ export default function Nav() {
         <li className="nav-item" role="presentation">
           <button
             className="nav-link"
-            id="profile-tab"
+            id="project-tab"
             data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
+            data-bs-target="#project-tab-pane"
             type="button"
             role="tab"
-            aria-controls="profile-tab-pane"
+            aria-controls="project-tab-pane"
             aria-selected="false"
           >
             Projects
+          </button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button
+            className="nav-link"
+            id="education-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#education-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="education-tab-pane"
+            aria-selected="false"
+          >
+           Education
+          </button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button
+            className="nav-link"
+            id="skills-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#skills-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="skills-tab-pane"
+            aria-selected="false"
+          >
+           Skills
+          </button>
+        </li>
+        <li className="nav-item" role="presentation">
+          <button
+            className="nav-link"
+            id="hobbies-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#hobbies-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="hobbies-tab-pane"
+            aria-selected="false"
+          >
+           Hobbies
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -77,12 +122,39 @@ export default function Nav() {
         </div>
         <div
           className="tab-pane fade"
-          id="profile-tab-pane"
+          id="project-tab-pane"
           role="tabpanel"
-          aria-labelledby="profile-tab"
+          aria-labelledby="project-tab"
           tabindex="0"
         >
           <Projects/>
+        </div>
+        <div
+          className="tab-pane fade"
+          id="education-tab-pane"
+          role="tabpanel"
+          aria-labelledby="education-tab"
+          tabindex="0"
+        >
+          <Education/>
+        </div>
+        <div
+          className="tab-pane fade"
+          id="skills-tab-pane"
+          role="tabpanel"
+          aria-labelledby="skills-tab"
+          tabindex="0"
+        >
+          <Skills/>
+        </div>
+        <div
+          className="tab-pane fade"
+          id="hobbies-tab-pane"
+          role="tabpanel"
+          aria-labelledby="hobbies-tab"
+          tabindex="0"
+        >
+          <Hobbies/>
         </div>
         <div
           className="tab-pane fade"
