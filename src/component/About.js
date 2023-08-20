@@ -15,9 +15,10 @@ import { SiExpress } from "react-icons/si";
 const About = () => {
   return (
     <div className="about" data-aos="fade-down">
+      <h1 style={{textAlign: 'center'}} >About</h1>
       <div className="about-intro" data-aos="fade-down">
         <div>
-          <img src={profileImage} alt="Profile" className="profile-image" />
+          <img src={profileImage} alt="Profile" className="profile-image" data-aos="zoom-in"/>
         </div>
         <p>
           I'm a self-taught full-stack web developer with a strong foundation in
