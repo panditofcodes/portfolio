@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
 
 export default function Home() {
+
+  
+
   return (
     <>
-      <div className="container mt-5 temp">
+      <div className="container mt-5 temp" data-aos="zoom-in" >
         <div className="row">
           <div className="col-lg-6 col-md-8 col-sm-12 mx-auto">
             <div className="text-center mb-4">
