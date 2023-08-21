@@ -3,7 +3,6 @@
   justify-content: center;
   gap: 15px; /* Adjust the gap between icons */
 }
-
 .social-links a {
   text-decoration: none; /* Remove default text decoration */
   color: inherit; /* Inherit the color from the parent */
@@ -67,7 +66,7 @@
 .about{
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
 }
@@ -103,7 +102,7 @@
 .experience-section{
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
 }
@@ -114,7 +113,7 @@
   flex-direction: column;
   background-color: #f7f7f7;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
 }
@@ -188,7 +187,10 @@
   }
 
   /* For Contact Form */
-
+  .contactWrapper{
+    display: flex;
+    flex-direction: column;
+}
   .contact-section {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center content horizontally */
