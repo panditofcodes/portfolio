@@ -1,37 +1,3 @@
-/* Add this CSS to your existing stylesheet or create a new one
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container-fluid {
-    height: 100%;
-  }
-  
-  .row {
-    height: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
-  
-  .col-lg-3,
-  .col-md-4,
-  .col-sm-12 {
-    height: 100%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  
-  .tab-content {
-    height: 100%;
-    overflow-y: auto;
-  }
-   */
-/* SocialLinks.css */
-
-/* SocialLinks.css */
-
 .social-links {
   display: flex;
   justify-content: center;
@@ -98,53 +64,13 @@ body, html {
 
 /* CSS For About */
 
-/* .about-container {
-  padding: 50px;
+.about{
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 30px;
 }
-
-.intro {
-  display: flex ;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col-md-4 {
-  flex: 1;
-  margin: 0 10px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-} */
 
 .skill-item{
   display: flex;
@@ -157,12 +83,6 @@ p {
   align-items: center;
   gap: 20px;
   padding: 20px;
-}
-
-.about{
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
@@ -184,4 +104,108 @@ p {
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 30px;
+}
+
+/* Contact Section */
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 25px;
+  padding: 30px;
+}
+.contact-section-links {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: center; */
+  margin-top: 10px;
+}
+
+.contact-section-links p,
+.contact-section-links a {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-section-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-section-links a:hover {
+  color: rgb(3, 83, 255);
+}
+
+.contact-form {
+  border-radius: 10px;
+  /* background-color:  rgb(201, 234, 13); */
+  box-shadow: 0px 4px 10px rgb(75, 115, 193);
+  padding: 30px;
+}
+
+.contactWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  resize: none;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .skill-item {
+    flex-wrap: wrap; /* Allow skill items to wrap */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px; /* Adjust margin for spacing */
+  }
+
+  .skill-item li {
+    margin: 5px; /* Add spacing between skill items */
+  }
+
+  /* For Contact Form */
+
+  .contact-section {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center content horizontally */
+  }
+
+  .contact-section-links {
+    margin-bottom: 15px; /* Add some spacing at the bottom */
+  }
+
+  .contact-form {
+    margin-top: 15px; /* Add spacing between sections */
+  }
+
+  /* About Intro */
+  .about-intro{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }

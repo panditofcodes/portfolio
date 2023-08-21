@@ -1,30 +1,120 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiTwotoneMail } from "react-icons/ai";
+import { BiPhoneCall, BiLogoWhatsapp, BiMap } from "react-icons/bi";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // You can handle the form submission using a service like Formspree
+    const response = await fetch("https://formspree.io/f/xknlrrwg", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } else {
+      alert("Failed to send message. Please try again later.");
+    }
+  };
+
   return (
-    <div className="contact" data-aos="fade-down">
-      <h2>Contact Me</h2>
+    <div className="contact-section" data-aos="fade-down">
+      <h2 style={{ textAlign: "center" }}>Contact Me</h2>
       <p>
         If you're interested in collaborating on a project, discussing potential
         opportunities, or just want to say hi, feel free to get in touch with me
         using the following methods:
       </p>
-      <ul>
-        <li>Email: piyushshukla_@outlook.com</li>
-        <li>Phone: +919161741999</li>
-        <li>
-          LinkedIn:{" "}
-          <a href="https://www.linkedin.com/in/panditofcodes/">
-            Your LinkedIn Profile
-          </a>
-        </li>
-        <li>
-          GitHub:{" "}
-          <a href="https://github.com/panditofcodes">Your GitHub Profile</a>
-        </li>
-        {/* Add more contact methods if needed */}
-      </ul>
-      <button className="btn btn-primary">Hire Me</button>
+      <div>
+        <div
+          className="contactWrapper"
+        >
+          <div className="contact-section-links">
+            <p>
+              {" "}
+              <BiMap /> Kanpur
+            </p>
+            <a href="mailto:piyushshukla_@outlook.com">
+              <AiTwotoneMail /> piyushshukla_@outlook.com
+            </a>
+            <a href="tel:+919161741999">
+              <BiPhoneCall /> +91-9161741999
+            </a>
+            <a href="https://wa.me/+919161741999">
+              <BiLogoWhatsapp /> 9161741999{" "}
+            </a>
+          </div>
+          {/* </div><br/>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        > */}
+          <div className="contact-form">
+            <h4 style={{ textAlign: "center" }}>Contact Me</h4>
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                {/* <label>Name</label> */}
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                {/* <label>Email</label> */}
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                {/* <label>Message</label> */}
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="btn btn-outline-success">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
