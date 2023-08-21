@@ -15,7 +15,7 @@ export default function Landingpage() {
         <Home />
         <About />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
       </div>
     </>
   );
