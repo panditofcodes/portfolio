@@ -1,3 +1,41 @@
+/* For Button in Home */
+.btn-hireMe {
+  margin-top: 15px;
+  margin-right: 10px;
+  color: purple;
+  border: purple solid 1px;
+  border-radius: 10px 0 0 10px; /* Rounded border on the left side */
+  padding: 10px 15px; /* Adjust padding as needed */
+  text-decoration: none;
+}
+.btn-resume{
+  margin-top: 15px;
+  margin-right: 10px;
+  color: purple;
+  border: purple solid 1px;
+  border-radius: 0 10px 10px 0; /* Rounded border on the left side */
+  padding: 10px 15px; /* Adjust padding as needed */
+  text-decoration: none;
+}
+
+.btn-hireMe:hover {
+  margin-top: 15px;
+  margin-right: 10px;
+  color: rgb(239, 225, 134);
+  background-color: purple;
+  border-radius: 10px 0 0 10px; /* Rounded border on the left side */
+  padding: 10px 15px; /* Adjust padding as needed */
+  text-decoration: none;
+}
+.btn-resume:hover {
+  margin-top: 15px;
+  margin-right: 10px;
+  color: rgb(239, 225, 134);
+  background-color: purple;
+  border-radius: 0 10px 10px 0; /* Rounded border on the left side */
+  padding: 10px 15px; /* Adjust padding as needed */
+  text-decoration: none;
+}
 
 .social-links {
   display: flex;
@@ -105,7 +143,7 @@
 
 /* Education */
 
-.resume-item{
+.resume-item {
   margin-left: 100px;
 }
 
@@ -187,33 +225,38 @@
   text-align: center;
 }
 
-.project-card-icons{
+.project-card-icons {
   display: flex;
   justify-content: center;
   gap: 5px;
 }
 
 @media (max-width: 768px) {
-
+  /* Css for Button in home */
+  .button-container {
+    position: relative;
+    margin-left: 30%;
+    margin-bottom: 15%;
+  }
   /* Eductaion */
-  .resume-item{
+  .resume-item {
     margin-left: 0px;
   }
-  .about-education-title{
+  .about-education-title {
     text-align: center;
   }
- .size-reducer{
-  font-size: 14px;
- }
+  .size-reducer {
+    font-size: 14px;
+  }
 
- /* Skill */
- .skill-title{
-  text-align: center;
-}
-.skill-sub-heading{
-  text-align: center;
-  font-size: 90%;
-}
+  /* Skill */
+  .skill-title {
+    text-align: center;
+  }
+  .skill-sub-heading {
+    text-align: center;
+    font-size: 90%;
+  }
   .skill-item {
     flex-wrap: wrap; /* Allow skill items to wrap */
     justify-content: center; /* Center items horizontally */
@@ -241,7 +284,7 @@
   .mobile-only {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Adjust the gap between icons */
+    gap: 50px; /* Adjust the gap between icons */
   }
 
   .mobile-only svg {
@@ -265,15 +308,15 @@
     flex-direction: column;
   }
   /* Intrest */
-  .intrest-section-title{
+  .intrest-section-title {
     text-align: center;
   }
-  .intrest-section{
+  .intrest-section {
     text-align: justify;
   }
 
   /* Experiance */
-  .experience-section-intro{
+  .experience-section-intro {
     text-align: justify;
   }
   .card {
@@ -306,16 +349,21 @@
   .mobile-only {
     display: none;
   }
-  .intrest-section{
+  .intrest-section {
     text-align: justify;
     text-indent: 90px;
     margin-left: 60px;
-    
   }
-  .skill-sub-heading{
+  .skill-sub-heading {
     margin-left: 100px;
   }
-  .skill-icon{
+  .skill-icon {
     margin-left: 120px;
+  }
+  /* Css for button in home */
+  .button-container {
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 15%;
   }
 }

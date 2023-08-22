@@ -1,15 +1,49 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
+import resume from "./Resume.pdf";
 
 export default function Home() {
+  const downloadResume = () => {
+    const fileName = "Resume.pdf";
+    const resumeUrl = resume; // Replace this with the actual URL of your image
 
-  
+    fetch(resumeUrl)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        a.click();
+
+        URL.revokeObjectURL(url);
+      })
+      .catch((error) => console.error("Error downloading image:", error));
+  };
+
+  const hireMe = () => {
+    window.location.href =
+      "mailto:piyushshukla_@outlook.com.com?subject=Impressed by Your Portfolio - Let's Discuss Opportunities!";
+  };
 
   return (
     <>
-      <div className="container mt-5 temp" data-aos="zoom-in" >
+      <div className="buttons-container"></div>
+      <div className="container mt-5 temp" data-aos="zoom-in">
         <div className="row">
           <div className="col-lg-6 col-md-8 col-sm-12 mx-auto">
+            <div className="button-container">
+              <button className= "btn-hireMe" onClick={hireMe}>
+                Hire Me
+              </button>
+              <button
+                onClick={downloadResume}
+                className="btn-resume"
+              >
+                Resume
+              </button>
+            </div>
             <div className="text-center mb-4">
               <h1>Hello, I'm Piyush Shukla</h1>
               <p className="lead">
