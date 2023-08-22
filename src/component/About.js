@@ -21,7 +21,7 @@ const About = () => {
         </div>
         <p>
           I'm a self-taught full-stack web developer with a strong foundation in
-          web technologies. My educational background includes a Bachelor of
+          web technologies like React, NodeJs etc. My educational background includes a Bachelor of
           Computer Applications (BCA), and I am currently pursuing a Master of
           Computer Applications (MCA). I have a passion for creating dynamic and
           responsive web applications using the latest tools and frameworks. My
@@ -33,21 +33,23 @@ const About = () => {
       <div className="about-education resume-item d-flex flex-column flex-md-row mb-5"data-aos="flip-up"> {/*Education*/}
         <div className="resume-section p-3 p-lg-5 d-flex flex-column">
           <div className="my-auto">
-            <h1 className="mb-5">Education</h1>
+            <h1 className="mb-5 about-education-title">Education</h1>
             <div className="resume-item d-flex flex-column flex-md-row mb-5">
               <div className="resume-content mr-auto">
-                <h3 className="mb-3">Indira Gandhi National Open University</h3>
-                <h6>Master Of Computer Applications</h6>
-                <p>Janaury 2023 - Present</p>
+                <h3 className="mb-3 size-reducer">Indira Gandhi National Open University</h3>
+                <h5 className="size-reducer"> Harcourt Butler Technological Institute</h5>
+                <h6 className="size-reducer">Master Of Computer Applications</h6>
+                <p className="size-reducer">Janaury 2023 - Present</p>
               </div>
             </div>
             <div className="resume-item d-flex flex-column flex-md-row mb-5">
               <div className="resume-content mr-auto">
-                <h3 className="mb-3">
+                <h3 className="mb-3 size-reducer">
                   Chhatrapati Shahu Ji Maharaj University
                 </h3>
-                <h6>Bachelor Of Computer Applications</h6>
-                <p>August 2019 - August 2022</p>
+                <h5 className="size-reducer">Jagran College of Arts, Science & Commerce</h5>
+                <h6 className="size-reducer">Bachelor Of Computer Applications</h6>
+                <p className="size-reducer">August 2019 - August 2022</p>
               </div>
             </div>
           </div>
@@ -55,9 +57,10 @@ const About = () => {
       </div>
       <div className="resume-item d-flex flex-column flex-md-row mb-5">{/*Skill*/}
         <div className="my-auto" data-aos="flip-up">
-          <h1 className="mb-3">Skills</h1>
-          <div className="subheading mb-3">PROGRAMMING LANGUAGES & TOOLS</div>
-          <ul className="list-inline list-icons skill-item">
+          <h1 className="mb-3 skill-title">Skills</h1>
+          <div className="subheading mb-3 skill-sub-heading">PROGRAMMING LANGUAGES & TOOLS</div>
+
+          <ul className="list-inline list-icons skill-item skill-icon" >
             <li>
               <BiLogoHtml5 />
             </li>
@@ -87,8 +90,8 @@ const About = () => {
       </div>
       <div className="resume-item d-flex flex-column flex-md-row mb-5">{/*Intrests*/}
         <div className="my-auto" data-aos="flip-up">
-          <h2 className="mb-5">Interests</h2>
-          <p>
+          <h2 className="mb-2 intrest-section-title">Interests</h2>
+          <p className="intrest-section">
             Hey there, beyond my gig as a developer, I find incredible joy in
             diving headfirst into a bunch of awesome hobbies that add a whole
             lot of flavor to my life. I'm all about grooving to music, capturing

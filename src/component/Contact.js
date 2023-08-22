@@ -48,22 +48,33 @@ const Contact = () => {
         using the following methods:
       </p>
       <div>
-        <div
-          className="contactWrapper"
-        >
+        <div className="contactWrapper">
           <div className="contact-section-links">
-            <p>
+            <p className="desktop-only">
               {" "}
               <BiMap /> Kanpur
             </p>
-            <a href="mailto:piyushshukla_@outlook.com">
-              <AiTwotoneMail /> piyushshukla_@outlook.com
+            <a href="mailto:piyushshukla_@outlook.com" className="desktop-only">
+              <AiTwotoneMail />piyushshukla_@outlook.com
             </a>
-            <a href="tel:+919161741999">
+            <a href="tel:+919161741999" className="desktop-only">
               <BiPhoneCall /> +91-9161741999
             </a>
-            <a href="https://wa.me/+919161741999">
+            <a href="https://wa.me/+919161741999" className="desktop-only">
               <BiLogoWhatsapp /> 9161741999{" "}
+            </a>
+          </div>
+
+          <div className="mobile-only">
+            <BiMap />
+            <a href="mailto:piyushshukla_@outlook.com">
+              <AiTwotoneMail />
+            </a>
+            <a href="tel:+919161741999">
+              <BiPhoneCall />
+            </a>
+            <a href="https://wa.me/+919161741999">
+              <BiLogoWhatsapp />
             </a>
           </div>
           {/* </div><br/>
@@ -74,7 +85,7 @@ const Contact = () => {
           }}
         > */}
           <div className="contact-form">
-            <h4 style={{ textAlign: "center" }}>Contact Me</h4>
+            <h4 style={{ textAlign: "center" }}>Send Message</h4>
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 {/* <label>Name</label> */}

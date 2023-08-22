@@ -1,5 +1,13 @@
 import React from "react";
 import noteApp from "./noteApp.png";
+import {
+  BiLogoReact,
+  BiLogoNodejs,
+  BiLogoMongodb,
+  BiLogoBootstrap,
+} from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
+
 
 export default function Projects() {
   return (
@@ -28,11 +36,17 @@ export default function Projects() {
           skills and contribute to exciting projects. If you want a dedicated
           developer with a passion for learning and good vibes, count me in!
         </p>
-        <div class="card" style={{ width: "18rem" }}>
-          <div class="card-body">
-            <h5 class="card-title">Notes Taking App</h5>
-            {/* <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> */}
-            <p class="card-text">
+        <div className="card" data-aos="fade-down">
+          {/* <img src={noteApp} className="card-img-top" alt="Photo" /> */}
+          <div className="card-body">
+            <h5 className="card-title">Notes Taking App</h5>
+            <p className="project-card-icons">
+              <BiLogoReact />
+              <BiLogoNodejs />
+              <SiExpress />
+              <BiLogoMongodb />
+            </p>
+            <p className="card-text">
               "Experience seamless note-taking with our responsive MERN-based
               app. Save, organize, and manage your notes with ease. Effortlessly
               move notes to the bin for temporary storage or restore them when
@@ -41,19 +55,22 @@ export default function Projects() {
               enjoying a user-friendly design that adapts to your screen,
               ensuring a smooth and intuitive note-taking experience."
             </p>
-            <a
-              href="https://strange-clam-slippers.cyclic.cloud/"
-              className="btn btn-outline-success"
-            >
-              See Live
-            </a>
-            <a
-              href="https://github.com/panditofcodes/notes-taking-app"
-              className="btn btn-outline-info"
-            >
-              Source Code
-            </a>
-            
+            <div className="btn-group">
+              <a
+                href="https://strange-clam-slippers.cyclic.cloud/"
+                target="blank"
+                className="btn btn-outline-success"
+              >
+                See Live
+              </a>
+              <a
+                href="https://github.com/panditofcodes/notes-taking-app"
+                target="blank"
+                className="btn btn-outline-info"
+              >
+                Source Code
+              </a>
+            </div>
           </div>
         </div>
       </div>

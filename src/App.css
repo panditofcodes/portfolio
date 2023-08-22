@@ -1,3 +1,4 @@
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -13,8 +14,11 @@
   font-size: 24px; /* Example font size for icons */
   /* Add additional styles if needed */
 }
-/* Add this CSS code to your stylesheet */
 
+.social-links a svg:hover {
+  font-size: 35px; /* Example font size for icons */
+  color: rgb(3, 83, 255);
+}
 /* Center the content */
 .temp {
   display: flex;
@@ -44,6 +48,7 @@
 
 /* Style for the card title */
 .card-title {
+  text-align: center;
   font-size: 1.25rem;
   margin-top: 10px;
 }
@@ -63,7 +68,7 @@
 
 /* CSS For About */
 
-.about{
+.about {
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 4px 50px rgb(75, 115, 193);
@@ -71,13 +76,14 @@
   padding: 30px;
 }
 
-.skill-item{
+.skill-item {
   display: flex;
   gap: 10px;
   font-size: 50px;
 }
 .about-intro {
   display: flex;
+  text-align: justify;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -97,9 +103,15 @@
   line-height: 1.6;
 }
 
+/* Education */
+
+.resume-item{
+  margin-left: 100px;
+}
+
 /* Project */
 
-.experience-section{
+.experience-section {
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 4px 50px rgb(75, 115, 193);
@@ -108,7 +120,7 @@
 }
 
 /* Contact Section */
-.contact-section{
+.contact-section {
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
@@ -149,10 +161,10 @@
   padding: 30px;
 }
 
-.contactWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contactWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .form-group {
@@ -175,7 +187,33 @@
   text-align: center;
 }
 
+.project-card-icons{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 @media (max-width: 768px) {
+
+  /* Eductaion */
+  .resume-item{
+    margin-left: 0px;
+  }
+  .about-education-title{
+    text-align: center;
+  }
+ .size-reducer{
+  font-size: 14px;
+ }
+
+ /* Skill */
+ .skill-title{
+  text-align: center;
+}
+.skill-sub-heading{
+  text-align: center;
+  font-size: 90%;
+}
   .skill-item {
     flex-wrap: wrap; /* Allow skill items to wrap */
     justify-content: center; /* Center items horizontally */
@@ -187,17 +225,34 @@
   }
 
   /* For Contact Form */
-  .contactWrapper{
+  .contactWrapper {
     display: flex;
     flex-direction: column;
-}
+  }
   .contact-section {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center content horizontally */
   }
 
-  .contact-section-links {
-    margin-bottom: 15px; /* Add some spacing at the bottom */
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adjust the gap between icons */
+  }
+
+  .mobile-only svg {
+    font-size: 24px; /* Example font size for icons */
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  .mobile-only a svg:hover {
+    font-size: 35px;
+    color: rgb(3, 83, 255);
   }
 
   .contact-form {
@@ -205,9 +260,62 @@
   }
 
   /* About Intro */
-  .about-intro{
+  .about-intro {
     display: flex;
     flex-direction: column;
   }
-  
+  /* Intrest */
+  .intrest-section-title{
+    text-align: center;
+  }
+  .intrest-section{
+    text-align: justify;
+  }
+
+  /* Experiance */
+  .experience-section-intro{
+    text-align: justify;
+  }
+  .card {
+    width: 100%; /* Make cards full width on smaller screens */
+    margin: 10px auto; /* Center cards horizontally */
+    text-align: justify;
+  }
+
+  .card-img-top {
+    max-height: 150px; /* Adjust image height on smaller screens */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Reduce font size for card title on smaller screens */
+    text-align: center;
+  }
+
+  .card-text {
+    font-size: 0.875rem; /* Reduce font size for card text on smaller screens */
+  }
+
+  .card-body .btn {
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 0.875rem; /* Reduce font size for buttons on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+  .intrest-section{
+    text-align: justify;
+    text-indent: 90px;
+    margin-left: 60px;
+    
+  }
+  .skill-sub-heading{
+    margin-left: 100px;
+  }
+  .skill-icon{
+    margin-left: 120px;
+  }
 }
