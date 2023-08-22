@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <div className="contact-section" data-aos="fade-down">
       <h2 style={{ textAlign: "center" }}>Contact Me</h2>
-      <p>
+      <p style={{textAlign: 'justify'}}>
         If you're interested in collaborating on a project, discussing potential
         opportunities, or just want to say hi, feel free to get in touch with me
         using the following methods:
@@ -55,7 +55,7 @@ const Contact = () => {
               <BiMap /> Kanpur
             </p>
             <a href="mailto:piyushshukla_@outlook.com" className="desktop-only">
-              <AiTwotoneMail />piyushshukla_@outlook.com
+              <AiTwotoneMail /> piyushshukla_@outlook.com
             </a>
             <a href="tel:+919161741999" className="desktop-only">
               <BiPhoneCall /> +91-9161741999
