@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "./profile.png";
+import profileImage from "./asset/profile.png";
 import {
   BiLogoHtml5,
   BiLogoCss3,
@@ -30,7 +30,7 @@ const About = () => {
           this field.
         </p>
       </div>
-      <div className="about-education resume-item d-flex flex-column flex-md-row mb-5"data-aos="flip-up"> {/*Education*/}
+      <div className="about-education resume-item d-flex flex-column flex-md-row mb-5"data-aos="fade-down"> {/*Education*/}
         <div className="resume-section p-3 p-lg-5 d-flex flex-column">
           <div className="my-auto">
             <h1 className="mb-5 about-education-title">Education</h1>
@@ -56,7 +56,7 @@ const About = () => {
         </div>
       </div>
       <div className="resume-item d-flex flex-column flex-md-row mb-5">{/*Skill*/}
-        <div className="my-auto" data-aos="flip-up">
+        <div className="my-auto" data-aos="fade-down">
           <h1 className="mb-3 skill-title">Skills</h1>
           <div className="subheading mb-3 skill-sub-heading">PROGRAMMING LANGUAGES & TOOLS</div>
 
@@ -89,7 +89,7 @@ const About = () => {
         </div>
       </div>
       <div className="resume-item d-flex flex-column flex-md-row mb-5">{/*Intrests*/}
-        <div className="my-auto" data-aos="flip-up">
+        <div className="my-auto" data-aos="fade-down">
           <h2 className="mb-2 intrest-section-title">Interests</h2>
           <p className="intrest-section">
             Hey there, beyond my gig as a developer, I find incredible joy in

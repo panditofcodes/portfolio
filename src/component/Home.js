@@ -1,6 +1,10 @@
 import React from "react";
 import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
-import resume from "./Resume.pdf";
+import resume from "./asset/Resume.pdf";
+import Lottie from "lottie-react";
+import down_arrow from "./asset/down_arrow.json"
+import welcome from "./asset/welcome.json"
+
 
 export default function Home() {
   const downloadResume = () => {
@@ -29,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="buttons-container"></div>
+    <Lottie animationData={welcome} className="welcome-animation" />
       <div className="container mt-5 temp" data-aos="zoom-in">
         <div className="row">
           <div className="col-lg-6 col-md-8 col-sm-12 mx-auto">
@@ -45,7 +49,7 @@ export default function Home() {
               </button>
             </div>
             <div className="text-center mb-4">
-              <h1>Hello, I'm Piyush Shukla</h1>
+              <h1>I'm Piyush Shukla</h1>
               <p className="lead">
                 An aspiring full-stack MERN developer eager to explore web
                 development. I've delved into MongoDB, Express.js, React.js, and
@@ -75,6 +79,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Lottie animationData={down_arrow} className="arrow-animation"/>
     </>
   );
 }

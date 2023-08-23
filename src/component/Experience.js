@@ -1,10 +1,8 @@
 import React from "react";
-import noteApp from "./noteApp.png";
 import {
   BiLogoReact,
   BiLogoNodejs,
   BiLogoMongodb,
-  BiLogoBootstrap,
 } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
 

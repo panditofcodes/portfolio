@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home";
-import Projects from "./Projects";
+import Experience from "./Experience";
 import About from "./About";
 import Contact from "./Contact";
 
@@ -10,7 +10,7 @@ export default function Landingpage() {
       <div className="container-fluid">
         <Home />
         <About />
-        <Projects />
+        <Experience />
         <Contact />
       </div>
     </>

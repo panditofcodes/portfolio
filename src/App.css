@@ -1,3 +1,23 @@
+/* Arrow Animation */
+.arrow-animation {
+  position: absolute;
+  bottom: 20px; /* Adjust the bottom positioning */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Adjust the width of the arrow animation */
+  height: 50px; /* Adjust the height of the arrow animation */
+}
+/* Welcome Animation */
+.welcome-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust the height as needed */
+  z-index: -1;
+  opacity: 0.8;
+}
+
 /* For Button in Home */
 .btn-hireMe {
   margin-top: 15px;
@@ -107,11 +127,13 @@
 /* CSS For About */
 
 .about {
+  position: relative;
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
+  z-index: 3;
 }
 
 .skill-item {
@@ -150,15 +172,18 @@
 /* Project */
 
 .experience-section {
+  position: relative;
   background-color: #f7f7f7;
   border-radius: 10px;
   box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
+  z-index: 2;
 }
 
 /* Contact Section */
 .contact-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
@@ -166,18 +191,20 @@
   box-shadow: 0px 4px 50px rgb(75, 115, 193);
   margin: 25px;
   padding: 30px;
+  z-index: 1;
 }
+
 .contact-section-links {
   display: flex;
   flex-direction: column;
   /* align-items: center;
   text-align: center; */
-  margin-top: 10px;
+  margin-top: 2%;
 }
 
 .contact-section-links p,
 .contact-section-links a {
-  margin-bottom: 10px;
+  margin-bottom: 10%;
   font-size: 16px;
   color: #333;
 }
@@ -232,10 +259,26 @@
 }
 
 @media (max-width: 768px) {
+  /* Css Arrow Annimation */
+  .arrow-animation {
+    bottom: 10px; /* Adjust bottom positioning for smaller screens */
+    width: 32px; /* Adjust width for smaller screens */
+    height: 32px; /* Adjust height for smaller screens */
+  }
+  /* Welcome Arrow */
+  .welcome-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%; /* Adjust the height as needed */
+    z-index: -1;
+    opacity: 0.8;
+  }
   /* Css for Button in home */
   .button-container {
     position: relative;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-bottom: 15%;
   }
   /* Eductaion */
@@ -284,10 +327,11 @@
   .mobile-only {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Adjust the gap between icons */
+    gap: 150%; /* Adjust the gap between icons */
   }
 
   .mobile-only svg {
+    margin-top: 90%;
     font-size: 24px; /* Example font size for icons */
     text-decoration: none;
     color: #333;
