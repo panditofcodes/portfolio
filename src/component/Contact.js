@@ -56,12 +56,12 @@ const Contact = () => {
 
         URL.revokeObjectURL(url);
       })
-      .catch((error) => console.error("Error downloading image:", error));
+      .catch((error) => console.error("Error downloading resume:", error));
   };
 
   const hireMe = () => {
     window.location.href =
-      "mailto:piyushshukla_@outlook.com.com?subject=Impressed by Your Portfolio - Let's Discuss Opportunities!";
+      "mailto:piyushshukla_@outlook.com?subject=Impressed by Your Portfolio - Let's Discuss Opportunities!";
   };
 
   return (

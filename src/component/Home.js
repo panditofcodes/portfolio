@@ -28,7 +28,7 @@ export default function Home() {
 
   const hireMe = () => {
     window.location.href =
-      "mailto:piyushshukla_@outlook.com.com?subject=Impressed by Your Portfolio - Let's Discuss Opportunities!";
+      "mailto:piyushshukla_@outlook.com?subject=Impressed by Your Portfolio - Let's Discuss Opportunities!";
   };
 
   return (
