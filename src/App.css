@@ -15,7 +15,6 @@
   width: 100%;
   height: 30%; /* Adjust the height as needed */
   z-index: -1;
-  opacity: 0.8;
 }
 
 /* For Button in Home */
@@ -410,13 +409,4 @@
     margin-bottom: 15%;
   }
 }
-@media (max-width: 667px) {
-  .welcome-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%; /* Adjust the height as needed */
-    z-index: -1;
-  }
-}
+
