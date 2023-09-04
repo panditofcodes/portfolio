@@ -17,14 +17,7 @@
   color: #555;
   text-align: center;
 }
-/* Arrow Animation */
-.arrow-animation {
-  bottom: 21px; /* Adjust the bottom positioning */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50px; /* Adjust the width of the arrow animation */
-  height: 50px; /* Adjust the height of the arrow animation */
-}
+
 /* Welcome Animation */
 .welcome-animation {
   top: 0;
@@ -401,6 +394,6 @@
   }
   .home-intro{
   
-    padding: 1% 25% 1% 25%;
-  }
+  padding: 1% 25% 1% 25%;
+}
 }
