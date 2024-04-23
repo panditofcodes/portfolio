@@ -9,6 +9,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [sendMsgAlert, setSendMsgAlert] = useState(" ")
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,8 +36,10 @@ const Contact = () => {
         email: "",
         message: "",
       });
+      setSendMsgAlert("Thank You! For Conatcting I will contact you soon.")
     } else {
-      alert("Failed to send message. Please try again later.");
+      // alert("Failed to send message. Please try again later.");
+      setSendMsgAlert("OOPS! could not contact.")
     }
   };
 
@@ -112,6 +115,7 @@ const Contact = () => {
               <button type="submit" className="btn btn-outline-primary">
                 Send Message
               </button>
+              <p>{sendMsgAlert}</p>
             </form>
           </div>
           <div className="contact-button-container" >
