@@ -45,15 +45,16 @@ export default function Home() {
         <div className="home-intro" data-aos="zoom-in">
           <h1>I'm Piyush Shukla</h1>
           <p className="lead">
-            An aspiring full-stack MERN developer eager to explore web
-            development. I've delved into MongoDB, Express.js, React.js, and
-            Node.js, mastering these technologies. From crafting responsive UIs
-            with React to enhancing user experiences through efficient
-            solutions, I'm committed to continuous learning. Collaboration is at
-            my core, and I thrive in teams, bringing ideas to life. Looking
-            forward, I aim to contribute to impactful projects, refine my
-            skills, and embrace the dynamic realm of full-stack MERN
-            development.
+            An ERPNext Developer with hands-on experience in building,
+            customizing, and maintaining ERP solutions using Frappe Framework.
+            Proficient in Python and JavaScript, with strong understanding of
+            backend logic, workflows, custom doctypes, reports, and
+            integrations. Experienced in developing web applications using
+            Django, applying structured backend design and clean data handling.
+            Passionate about optimizing business processes through automation,
+            role-based access control, and scalable system design. A continuous
+            learner who enjoys collaborating with teams to deliver reliable,
+            efficient, and impactful enterprise solutions.
           </p>
           <div className="social-links">
             <a href="https://linkedin.com/in/panditofcodes">
